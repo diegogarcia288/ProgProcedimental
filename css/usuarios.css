@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background: linear-gradient(rgb(230, 103, 103),rgb(73, 177, 247));
+    width: 100%;
+}
+
+.box{
+    margin: 70px;
+    background-color: rgb(32, 132, 247);
+}
+
+label{
+    text-align: center;
+}
+input.input{
+    border-style: outset;
+    border-width: 5px;
+}
+
+.media-content .button{
+    background-color: rgb(214, 210, 209);
+    border-style: groove;
+    border-color: rgb(106, 145, 250);
+    border-width: 7px;
+}
