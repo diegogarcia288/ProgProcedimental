@@ -1,0 +1,30 @@
+body{
+    background: url("../imagenes/image.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.navbar{
+    background-color: rgb(107, 107, 252);
+    border-style: solid;
+    border-color: black;
+    border-width:15px;
+    border-radius: 10px;
+    border-color: rgb(107, 107, 252);
+}
+
+.columns{
+    margin-top: 10px;
+}
+
+.card{
+    background-color: rgb(107, 107, 252);
+}
+
+.media-content{
+    height: 10px;
+    width: 5px;
+}
