@@ -1,6 +1,6 @@
 html, body {
-    height: auto;          /* Permite que crezca con el contenido */
-    min-height: 100vh;     /* Mantiene el tamaño mínimo de la pantalla */
+    height: auto;          
+    min-height: 100vh;     
     margin: 0;
     padding: 0;
 }
