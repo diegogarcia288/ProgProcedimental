@@ -1,16 +1,55 @@
-body{
-    background: linear-gradient(rgb(88, 17, 12), rgb(178, 139, 132));
+html, body {
+    height: auto;          /* Permite que crezca con el contenido */
+    min-height: 100vh;     /* Mantiene el tamaño mínimo de la pantalla */
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    background: url("../imagenes/image.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 40px;
+}
+
+.navbar{
+    background-color: rgb(107, 107, 252);
+    border-style: solid;
+    border-color: black;
+    border-width:15px;
+    border-radius: 10px;
+    border-color: rgb(107, 107, 252);
+}
+
 .card{
     padding: 5%;
     margin: 3%;
     border: 25px;
-    border-color: rgb(189, 107, 107);
+    border-color: rgb(119, 156, 235);
     border-style: groove;
-    background: linear-gradient(rgb(184, 101, 81));
+    background: linear-gradient(rgb(107, 107, 252));
 }
 .tag{
+    color: black;
+    background-color: rgb(151, 173, 230);
     margin-top: 4%;
     margin-left: 25%;
     width: 50%;
+}
+
+.card-header{
+    background-color: rgb(0, 71, 152);
+}
+
+.content{
+    color:black
+}
+
+.card-footer{
+    width: 50%;
+    background-color: rgb(0, 71, 152);
+    margin-left: auto;
+    margin-right: auto;
 }
