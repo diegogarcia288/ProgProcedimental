@@ -50,7 +50,7 @@
                                 <label class="label">Ingresos</label>
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-success" type="number" placeholder="Number input"
-                                        value="9999">
+                                        value="9999" id="Ingresos">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -64,7 +64,7 @@
                                 <label class="label">Egresos</label>
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-success" type="number" placeholder="Number input"
-                                        value="0000">
+                                        value="0000" id="Egresos">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -78,7 +78,7 @@
                                 <label class="label">Concepto</label>
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-success" type="text" placeholder="Text input"
-                                        value="¿De qué Ingresa/Sale?">
+                                        value="¿De qué Ingresa/Sale?" id="Concepto">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -92,7 +92,35 @@
                                 <label class="label">Fecha</label>
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-success" type="date" placeholder="Date input"
-                                        value="dd/mm/aa">
+                                        value="dd/mm/aa" id="Fecha" id="Fecha">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Valor</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-success" type="number" placeholder="Number input"
+                                        value="9999" id="Valor">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Ventas</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-success" type="number" placeholder="Number input"
+                                        value="9999" id="Ventas">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -126,12 +154,15 @@
                         <a href="../index.html">
                             <button class="button">VOLVER PÁGINA PRINCIPAL</button>
                         </a>
+                        <button class="button" id="guardar">Enviar</button>
                     </div>
                 </article>
             </div>
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/contabilidad.js"></script>
 </body>
 
 </html>
