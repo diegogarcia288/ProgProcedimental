@@ -47,16 +47,16 @@
 
                                 <div class="field">
                                     <label class="label">FORMULARIO</label>
-                                    <div class="control">
-                                        <input class="input" type="text" placeholder="Codigo Producto">
-                                    </div>
+                                </div>
+
+                                <div class="control">
+                                        <input id="cod_prod"class="input" type="text" placeholder="Codigo Producto">
                                 </div>
 
                                 <div class="field">
                                     <label class="label">Nombre Producto</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="text" placeholder="Text input"
-                                            value="arroz">
+                                        <input id="nom_pro" class="input is-success" type="text" placeholder="NOMBRE PRODUCTO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -70,8 +70,7 @@
                                 <div class="field">
                                     <label class="label">Cantidad de producto</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="number" placeholder="Number Input"
-                                            value="0000">
+                                        <input id="cant_pro" class="input is-success" type="number" placeholder="CANTIDAD PRODUCTO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-envelope"></i>
                                         </span>
@@ -85,8 +84,7 @@
                                 <div class="field">
                                     <label class="label">Descripcion Producto</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="text" placeholder="Text input"
-                                            value="arroz quemado">
+                                        <input id="desc_pro" class="input is-success" type="text" placeholder="DESCRIPCION PRODUCTO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -99,8 +97,7 @@
                                 <div class="field">
                                     <label class="label">Marca Producto</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="text" placeholder="Text input"
-                                            value="ROA">
+                                        <input id="marca_pro" class="input is-success" type="text" placeholder="MARCA PRODUCTO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -114,8 +111,7 @@
                                 <div class="field">
                                     <label class="label">Valor Unitario</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="number" placeholder="number input"
-                                            value="0000">
+                                        <input id="valor_uni" class="input is-success" type="number" placeholder="VALOR UNITARIO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -128,9 +124,8 @@
 
                                 <div class="field">
                                     <label class="label">Categoria Producto</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="text" placeholder="text input"
-                                            value="grano">
+                                    <div id="cate_product" class="control has-icons-left has-icons-right">
+                                        <input class="input is-success" type="text" placeholder="CATEGORIA PRODUCTO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -144,8 +139,7 @@
                                 <div class="field">
                                     <label class="label">Ubicacion Producto</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-success" type="text" placeholder="text input"
-                                            value="izquierda">
+                                        <input id="ubi_product" class="input is-success" type="text" placeholder="UBICACIÓN PRODUCTO">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -178,6 +172,7 @@
                             </nav>
                             <a href="../index.html"><button class="button">VOLVER PÁGINA
                                     PRINCIPAL</button></a>
+                            <button class="button" id="guardar">Enviar</button>        
                         </div>
                         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                         <script src="../js/inventario.js"></script>

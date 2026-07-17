@@ -47,9 +47,23 @@
                             </div>
 
                             <div class="field">
+                                <label class="label">Código Producto</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input id="cod_pro" class="input is-success" type="text" placeholder="Codigo Producto">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="field">
                                 <label class="label">Producto</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Rata">
+                                    <input id="producto" class="input is-success" type="text" placeholder="Producto">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -62,7 +76,7 @@
                             <div class="field">
                                 <label class="label">Dirección</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Cra ---">
+                                    <input id="direccion" class="input is-success" type="text" placeholder="Direccion">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -75,7 +89,7 @@
                             <div class="field">
                                 <label class="label">Nombre del Usuario</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Pepito">
+                                    <input id="nom_user" class="input is-success" type="text" placeholder="Nombre Usuario">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -88,7 +102,7 @@
                             <div class="field">
                                 <label class="label">Cantidad</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="number" placeholder="Number input" value="9999">
+                                    <input id="cant" class="input is-success" type="number" placeholder="Cantidad">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -101,7 +115,7 @@
                             <div class="field">
                                 <label class="label">Método de Pago</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Nequi">
+                                    <input id="met_pago" class="input is-success" type="text" placeholder="Método Pago">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -114,7 +128,7 @@
                             <div class="field">
                                 <label class="label">Pago</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Si/No">
+                                    <input id="pago" class="input is-success" type="number" placeholder="20.000">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -127,7 +141,7 @@
                             <div class="field">
                                 <label class="label">Telefono</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="number" placeholder="Number input" value="3135506022">
+                                    <input id="telefono" class="input is-success" type="number" placeholder="Número">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -161,6 +175,7 @@
                         <a href="../index.html">
                             <button class="button">VOLVER PÁGINA PRINCIPAL</button>
                         </a>
+                        <button class="button" id="guardar">Enviar</button>
                     </div>
                 </article>
             </div>

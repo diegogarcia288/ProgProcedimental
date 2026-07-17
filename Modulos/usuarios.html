@@ -45,15 +45,12 @@
 
                             <div class="field">
                                 <label class="label">FORMULARIO USUARIO</label>
-                                <div class="control">
-                                    <input class="input" type="password" placeholder="Contraseña">
-                                </div>
                             </div>
 
                             <div class="field">
                                 <label class="label">Nombre</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Adán">
+                                    <input class= "input is-success" id="nombre" type="text" placeholder="NOMBRE">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -63,7 +60,7 @@
                             <div class="field">
                                 <label class="label">Apellido</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Eva">
+                                    <input class="input is-success" id="apellido" type="text" placeholder="APELLIDO">
                                     <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
                                     <span class="icon is-small is-right"><i
                                             class="fas fa-exclamation-triangle"></i></span>
@@ -74,7 +71,7 @@
                             <div class="field">
                                 <label class="label">Tipo de Documento</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Text input" value="Cédula">
+                                    <input class="input is-success" id="tip_doc" type="text" placeholder="DOCUMENTO">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -83,8 +80,7 @@
                             <div class="field">
                                 <label class="label">Número de Documento</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="number" placeholder="Number input"
-                                        value="9999">
+                                    <input class="input is-success" id="num_doc" type="number" placeholder="NÚMERO DE DOCUMENTO">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -94,7 +90,7 @@
                             <div class="field">
                                 <label class="label">Telefono</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="tel" placeholder="Tel input" value="5555">
+                                    <input class="input is-success" id="tel" type="tel" placeholder="Telefono">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -104,8 +100,7 @@
                             <div class="field">
                                 <label class="label">Correo Electrónico</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="email" placeholder="email input"
-                                        value="alguien@gmail.com">
+                                    <input class="input is-success" id="email" type="email" placeholder="email">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -115,8 +110,7 @@
                             <div class="field">
                                 <label class="label">Género</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="text input"
-                                        value="Masculino/Femenino">
+                                    <input class="input is-success" id="gen" type="text" placeholder="Masculino/Femenino">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -125,8 +119,7 @@
                             <div class="field">
                                 <label class="label">Cargo</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="text input"
-                                        value="Administrador">
+                                    <input class="input is-success" id="cargo" type="text" placeholder="Cargo">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -136,8 +129,17 @@
                             <div class="field">
                                 <label class="label">Fecha de Nacimiento</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="date" placeholder="date input"
-                                        value="dd/mm/aaaa">
+                                    <input class="input is-success" id="nacimiento" type="date" placeholder="Nacimiento">
+                                    <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                                    <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+                                </div>
+                                <p class="help is-success">THIS ADRESS IS AVAILABLE</p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Contraseña</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-success" id="cont" type="password" placeholder="Contraseña">
                                     <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                                     <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
                                 </div>
@@ -159,6 +161,7 @@
                             </div>
                         </nav>
                         <a href="../index.html"><button class="button">VOLVER PÁGINA PRINCIPAL</button></a>
+                        <button class="button" id="guardar">Enviar</button>
                     </div>
                 </article>
             </div>
