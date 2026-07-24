@@ -31,6 +31,7 @@ function ValidarInformacion() {
             ${cargo}
             ${nacimiento}
             ${contrasena} \n`);
+
         if (!/^[a-zA-ZÁÉÍÓÚÑáéíóúñ\s]+$/.test(nombre)) {
             Swal.fire({
                 icon: "error",
@@ -95,7 +96,7 @@ function ValidarInformacion() {
                 timer: 1500
             });
         }
-                if (!/^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/.test(nacimiento)) {
+        if (!/^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/.test(nacimiento)) {
             Swal.fire({
                 icon: "error",
                 title: "Introduzca una fecha válida",
@@ -103,14 +104,20 @@ function ValidarInformacion() {
                 timer: 1500
             });
         }
-        if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/.test(contrasena)) {
+        if (!/^(?=.*[a-z])(?=.*\d).{8,}$/.test(contrasena)) {
             Swal.fire({
                 icon: "error",
-                title: "Digite una contraseña válida",
+                title: "Digite una contraseña válida: Se necesita Letras (minusculas), números y debe ser máximo 8",
                 showConfirmButton: false,
                 timer: 1500
             });
-        }     
+        }
+        Swal.fire({
+            icon: "success",
+            title: "Usuario Registrado",
+            showConfirmButton: false,
+            timer: 1500
+        });
 
     }
 }

@@ -9,7 +9,7 @@ function ValidarInformacion() {
     let ubi_product = document.getElementById("ubi_product").value;
 
 
-    if (!cod_pro || !nom_pro || !cant_pro || !desc_pro || !marca_pro || !valor_uni || !cate_product || !ubi_product) {
+    if (!cod_prod || !nom_pro || !cant_pro || !desc_pro || !marca_pro || !valor_uni || !cate_product || !ubi_product) {
         Swal.fire({
             title: "Error",
             text: "Hay Campos Incompletos",
@@ -75,7 +75,7 @@ function ValidarInformacion() {
                 timer: 1500
             });
         }
-                if (!/^[a-zA-ZÁÉÍÓÚÑáéíóúñ\s]+$/.test(cate_product)) {
+        if (!/^[a-zA-ZÁÉÍÓÚÑáéíóúñ\s]+$/.test(cate_product)) {
             Swal.fire({
                 icon: "error",
                 title: "La categoráa del producto debe contener texto",
@@ -83,16 +83,22 @@ function ValidarInformacion() {
                 timer: 1500
             });
         }
-                if (!/^[a-zA-ZÁÉÍÓÚÑáéíóúñ\s]+$/.test(ubi_product)) {
+        if (!/^[a-zA-ZÁÉÍÓÚÑáéíóúñ\s]+$/.test(ubi_product)) {
             Swal.fire({
                 icon: "error",
                 title: "La ubicación del producto debe contener números",
                 showConfirmButton: false,
                 timer: 1500
             });
-        }      
-
+        }
+        Swal.fire({
+            icon: "success",
+            title: "Almacenado correctamente",
+            showConfirmButton: false,
+            timer: 1500
+        });
     }
+
 }
 
 document.getElementById("guardar").onclick = ValidarInformacion;

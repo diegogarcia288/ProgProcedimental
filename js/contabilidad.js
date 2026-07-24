@@ -70,9 +70,16 @@ function ValidarInformacion() {
                 showConfirmButton: false,
                 timer: 1500
             });
-        }       
+        }
+        Swal.fire({
+                icon: "success",
+                title: "Almacenado correctamente",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
 
     }
-}
+// }
 
 document.getElementById("guardar").onclick = ValidarInformacion;

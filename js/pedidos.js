@@ -43,10 +43,10 @@ function ValidarInformacion() {
                 timer: 1500
             });
         }
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(direccion)) {
+        if (!/^[a-zA-ZÁÉÍÓÚÑáéíóúñ\s]+$/.test(direccion)) {
             Swal.fire({
                 icon: "error",
-                title: "",
+                title: "La dirección debe contener Texto",
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -90,8 +90,13 @@ function ValidarInformacion() {
                 showConfirmButton: false,
                 timer: 1500
             });
-        }     
-
+        }
+         Swal.fire({
+                icon: "success",
+                title: "Pedido Registrado",
+                showConfirmButton: false,
+                timer: 1500
+            });
     }
 }
 
